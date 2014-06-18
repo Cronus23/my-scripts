@@ -1,0 +1,16 @@
+#!/bin/bash
+
+file=$1
+
+mime=$(file --mime-type -b $file)
+
+ext=$(cat ~/scripts/filetable.txt | grep $mime | awk -F"%%%" '{print $2}')
+
+mv $file ${file}.${ext}
+
+
+
+
+
+
+

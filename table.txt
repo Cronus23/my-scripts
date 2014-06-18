@@ -1,0 +1,11 @@
+text/plain
+image/jpeg
+application/zip
+audio/mpeg
+text/x-shellscript
+video/mp4
+video/x-flv
+image/gif
+audio/x-wav
+application/x-empty
+application/x-gzip

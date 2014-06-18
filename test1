@@ -1,0 +1,33 @@
+#
+#
+#
+#
+#
+#
+#
+set -x
+addext(){
+echo $type$ext
+}
+
+
+
+
+
+
+a1=$1
+
+for x in $(ls $a1)
+do 
+	type=$(file --mime-type -b $x)
+	ext=$(cat filetable.txt | grep $type)
+
+	if [ [ !$( $x != $(x%.*).$ext ] ]
+	then
+		addext $x
+	else
+		continue
+	fi	
+
+done
+

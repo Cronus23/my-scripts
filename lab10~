@@ -1,0 +1,104 @@
+#!/bin/bash
+# lab10
+# numvalidate.sh
+#
+#
+#
+#
+# Description: Create a script with four functions using  BASH's in process 
+# regular expressions to check the validity of Social Security numbers, 
+# telephone numbers, IP addresses and credit card numbers based on 
+# each particular data format.
+# 1 each function will be named check_ip, check_ssn, check_pn and check_ccn
+# 2 Each function will take one argument - the data in question
+# 3 Each function will return a message and a 1 or 0 depending on the outcome of the comparison
+# 4 Create a select menu asking the user which piece of data they want to check and prompt the user to type in the info
+
+# . any one char inside [] pattern
+# [x-z] range
+# [ -] space or dash
+# [ _-] bimodal _ or dash
+# inside [] ^ means not
+# outside [] ^ means beginning with
+# [what]{how many}? <---optional
+# {3} means exactly three {3,} at least 3 {,5} no more than five {3,5} range from 3 to 5
+# []? <----optional
+
+
+
+#Functions
+
+#any number 0-9, . 
+check_ip(){
+#ip pattern
+
+
+
+
+echo
+echo "Enter an ip number"
+
+
+
+}
+
+
+
+#any number 0-9, -
+check_ssn(){
+	
+	
+	echo
+}
+
+
+
+
+check_pn(){
+
+
+echo
+
+ }
+
+
+
+
+check_ccn(){
+
+echo
+
+ }
+
+
+
+
+
+
+
+
+
+#Menu
+
+echo "Validation Program"
+echo
+echo "1)Enter SSN"
+echo "2)Enter phone number"
+echo "3)Enter credit card number"
+echo "4)Enter IP address"
+echo "============================="
+echo
+echo
+echo
+echo -n "Enter number:"
+read Data
+
+case $Data in
+	1) check_ssn ;;
+	2) check_ph ;;
+	3) check_ccn ;;
+	4) check_ip ;;
+esac
+
+
+

@@ -1,0 +1,82 @@
+#!/bin/bash
+# Author: Napoleon
+# fileinspector.sh1
+# my network connection sucks so tested on my machine first
+# 
+#set -x
+loadfileTable(){
+#initialize filetable.txt
+cat filetable.txt > list 
+
+
+
+}
+
+fileList(){
+#prints file types
+for f in $a1 
+do 
+	#file --mime-type -b $a1 > sto
+	echo $mime ;  addX
+	echo $mime$ext 
+done
+
+}
+
+
+matchtype(){
+#matches up file types of both files
+#loop through the fileList and match
+
+exit
+}
+
+addX(){
+#add extension
+ext=$(cat filetable.txt | grep $mime | awk -F"%%%" '{print $2}')
+echo $ext
+
+exit
+}
+
+
+
+isDir(){
+if [ -d "$s" ]
+	then
+	
+	cd $s	
+	#cd into dir and list contents
+	fileList
+fi	
+}
+
+
+#echo $PWD
+#echo "bye"
+a1=$1
+mime=$(file --mime-type -b $a1)
+
+
+#for f in $a1*
+#do
+#	if [ -d "$f" ]
+#	then
+#		echo " $f is a directory"
+#	elif [ -f "$f" ]
+#	then 
+#		echo "$f is a file"
+#	fi
+#done
+
+#all this does is print out the file types
+addX
+
+fileList
+
+#fileList | isDir 
+
+
+
+
+
