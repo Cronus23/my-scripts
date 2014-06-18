@@ -1,0 +1,11 @@
+text/plain%%%txt
+image/jpeg%%%jpeg
+application/zip%%%zip
+audio/mpeg%%%mpeg
+text/x-shellscript%%%sh
+video/mp4%%%mp4
+video/x-flv%%%flv
+image/gif%%%gif
+audio/x-wav%%%wav
+application/x-empty
+application/x-gzip%%%gz
